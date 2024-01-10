@@ -10,12 +10,24 @@ html, body {
 }
 
 .background-section {
-  /* background-color: blue; */
-  background-image: url('./images/win_light.jpg');
+  background-color: pink;
+  /* background-image: url('./images/win_light.jpg'); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 70vh;
+}
+
+.background-section {
+  background-color: pink;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh; 
+}
+
+.carousel-item {
+  height: 100%; 
 }
 
 @media (max-width: 768px) {
