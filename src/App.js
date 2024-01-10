@@ -1,6 +1,6 @@
 import './index.css';
 import React from 'react';
-import {Container, Row, Col, Carousel}  from 'react-bootstrap';
+import {Container, Carousel}  from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
