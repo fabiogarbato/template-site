@@ -1,13 +1,13 @@
 import './index.css';
 import React from 'react';
-import {Container, Carousel}  from 'react-bootstrap';
+import {Container, Carousel, Row, Col}  from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Container fluid style={{ backgroundColor: 'blue', minHeight: '100vh' }}>
+    <Container fluid style={{ backgroundColor: '#F5DEB3', minHeight: '100vh' }}>
         <Navbar bg="blue" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -31,6 +31,21 @@ function App() {
                     <div style={{ backgroundColor: 'black', width: '100%', height: '50vh' }}></div>
                 </Carousel.Item>
             </Carousel>
+        </Container>
+        <Container className='background-section2'>
+            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
+                <Col className='d-flex justify-content-center align-items-center'>
+                    <span>Texto centralizado</span>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
+                    <span>Coluna da esquerda</span>
+                </Col>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
+                    <span>Coluna da direita</span>
+                </Col>
+            </Row>
         </Container>
     </Container>
   );

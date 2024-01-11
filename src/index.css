@@ -14,15 +14,15 @@ html, body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 
-.background-section {
-  background-color: pink;
+.background-section2 {
+  background-color: rgb(255, 0, 43);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 50vh; 
+  min-height: 70vh; 
 }
 
 .carousel-item {
@@ -30,7 +30,7 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .background-section {
+  .background-section, .background-section2 {
       min-height: 40vh;
   }
 }
