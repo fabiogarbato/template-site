@@ -29,9 +29,50 @@ html, body {
   height: 100%; 
 }
 
+.text-first{
+  font-size: 50px;
+  text-align: center;
+}
+
+.text-before{
+  font-size: 25px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}
+
+
 @media (max-width: 768px) {
   .background-section, .background-section2 {
       min-height: 40vh;
+  }
+
+  .text-first{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text-before{
+    font-size: 15px;
   }
 }
 
