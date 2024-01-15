@@ -23,9 +23,9 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#link" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Pagina 1</Nav.Link>
-                    <Nav.Link href="#link" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Pagina 2</Nav.Link>
-                    <Nav.Link href="#link" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Pagina 3</Nav.Link>
+                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Página 1</Nav.Link>
+                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Pagina 2</Nav.Link>
+                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'white' }}>Pagina 3</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -43,7 +43,7 @@ function App() {
             </Carousel>
         </Container>
         <Container className='background-space'></Container>
-        <Container className='background-section2'>
+        <Container id='pagina1' className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
                 <Col className='d-flex justify-content-center align-items-center'>
                     <span className='text-first'>Texto principal</span>
@@ -59,7 +59,7 @@ function App() {
             </Row>
         </Container>
         <Container className='background-space'></Container>
-        <Container className='background-section2'>
+        <Container id='pagina2' className='background-section2'>
             <Row className="mb-1">
                 <Col xs={12} md={4} style={{ backgroundColor: 'purple', height: '40vh'}}>
                 
@@ -99,7 +99,28 @@ function App() {
             </iframe> 
         </Container>
         <Container className='background-space'></Container>
+        <Container id='pagina3' className='background-contact'>
+            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
+                <Col className='d-flex justify-content-center align-items-center'>
+                    <span className='text-first'>Contato</span>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
+                    <span className='text-before'>bla</span>
+                </Col>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
+                    <span className='text-before'>bla</span>
+                </Col>
+            </Row>
+        </Container>
+        <Container className='background-space'></Container>
         <WhatsAppButton phoneNumber="41987372059" />
+        <footer className="bg-dark text-light py-3">
+            <Container fluid>
+                <p className="text-center mb-0">© Seu Nome ou Marca - Ano Atual</p>
+            </Container>
+        </footer>
     </Container>
   );
 }

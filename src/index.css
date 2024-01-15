@@ -52,7 +52,15 @@ html, body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 15vh; 
+  min-height: 10vh; 
+}
+
+.background-contact {
+  background-color: rgb(255, 0, 43);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 45vh; 
 }
 
 .carousel-item {
