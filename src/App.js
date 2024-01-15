@@ -18,7 +18,7 @@ const WhatsAppButton = ({ phoneNumber }) => {
 function App() {
   return (
     <Container fluid style={{ backgroundColor: '#F5DEB3', minHeight: '100vh' }}>
-        <Navbar bg="blue" expand="lg">
+        <Navbar id = 'home' bg="blue" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
@@ -42,8 +42,8 @@ function App() {
                 </Carousel.Item>
             </Carousel>
         </Container>
-        <Container className='background-space'></Container>
-        <Container id='pagina1' className='background-section2'>
+        <Container id='pagina1' className='background-space'></Container>
+        <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
                 <Col className='d-flex justify-content-center align-items-center'>
                     <span className='text-first'>Texto principal</span>
@@ -58,8 +58,8 @@ function App() {
                 </Col>
             </Row>
         </Container>
-        <Container className='background-space'></Container>
-        <Container id='pagina2' className='background-section2'>
+        <Container id='pagina2' className='background-space'></Container>
+        <Container className='background-section2'>
             <Row className="mb-1">
                 <Col xs={12} md={4} style={{ backgroundColor: 'purple', height: '40vh'}}>
                 
@@ -83,6 +83,22 @@ function App() {
                 </Col>
             </Row>
         </Container>
+        <Container id='pagina3' className='background-space'></Container>
+        <Container className='background-contact'>
+            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
+                <Col className='d-flex justify-content-center align-items-center'>
+                    <span className='text-first'>Contato</span>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
+                    <span className='text-before'>bla</span>
+                </Col>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
+                    <span className='text-before'>bla</span>
+                </Col>
+            </Row>
+        </Container>
         <Container className='background-space'></Container>
         <Container className='background-maps'>
             <iframe
@@ -99,26 +115,10 @@ function App() {
             </iframe> 
         </Container>
         <Container className='background-space'></Container>
-        <Container id='pagina3' className='background-contact'>
-            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
-                <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first'>Contato</span>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
-                    <span className='text-before'>bla</span>
-                </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
-                    <span className='text-before'>bla</span>
-                </Col>
-            </Row>
-        </Container>
-        <Container className='background-space'></Container>
         <WhatsAppButton phoneNumber="41987372059" />
         <footer className="bg-dark text-light py-3">
             <Container fluid>
-                <p className="text-center mb-0">© Seu Nome ou Marca - Ano Atual</p>
+                <p className="text-center mb-0">© Seu Nome ou Marca - {new Date().getFullYear()}</p>
             </Container>
         </footer>
     </Container>
