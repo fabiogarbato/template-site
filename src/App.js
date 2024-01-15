@@ -42,6 +42,7 @@ function App() {
                 </Carousel.Item>
             </Carousel>
         </Container>
+        <Container className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
                 <Col className='d-flex justify-content-center align-items-center'>
@@ -54,6 +55,31 @@ function App() {
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
                     <span className='text-before'>Lorem ipsum odio faucibus elementum fames neque class pellentesque taciti, ut magna fermentum quis leo laoreet fusce potenti, augue ultrices etiam augue sed felis bibendum suspendisse. eu aliquam augue velit eu sollicitudin odio justo, blandit duis sit purus ultricies augue venenatis, neque purus habitant quis mi himenaeos. dolor laoreet eu congue nullam erat himenaeos dictum, inceptos varius nec vulputate ante donec vitae augue, auctor cursus molestie cursus euismod facilisis. commodo scelerisque nisi sed fermentum lacinia amet quisque maecenas accumsan, imperdiet varius ullamcorper orci felis quisque sem habitasse, hac ac nec pharetra integer vestibulum quis porttitor. </span>
+                </Col>
+            </Row>
+        </Container>
+        <Container className='background-space'></Container>
+        <Container className='background-section2'>
+            <Row className="mb-1">
+                <Col xs={12} md={4} style={{ backgroundColor: 'purple', height: '40vh'}}>
+                
+                </Col>
+                <Col xs={12} md={4} style={{ backgroundColor: 'white', height: '40vh'}}>
+                
+                </Col>
+                <Col xs={12} md={4} style={{ backgroundColor: 'grey', height: '40vh'}}>
+                
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} style={{ backgroundColor: 'pink', height: '40vh'}}>
+
+                </Col>
+                <Col xs={12} md={4} style={{ backgroundColor: 'blue', height: '40vh'}}>
+                
+                </Col>
+                <Col xs={12} md={4} style={{ backgroundColor: 'orange', height: '40vh'}}>
+                
                 </Col>
             </Row>
         </Container>

@@ -9,6 +9,11 @@ html, body {
   }
 }
 
+.nav-link-hover:hover {
+  transform: scale(1.05); 
+  transition: transform 0.1s; 
+}
+
 .background-section {
   background-color: pink;
   background-size: contain;
@@ -23,6 +28,14 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 70vh; 
+}
+
+.background-space {
+  /* background-color: rgb(255, 0, 43); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 15vh; 
 }
 
 .carousel-item {
@@ -76,7 +89,7 @@ html, body {
   }
 }
 
-@media (max-width: 586px) {
+@media (max-width: 280px) {
   .background-section, .background-section2 {
       min-height: 40vh;
   }
@@ -91,8 +104,20 @@ html, body {
   }
 }
 
-.nav-link-hover:hover {
-  transform: scale(1.05); 
-  transition: transform 0.1s; 
+@media (min-width: 300px) and (max-width: 586px) {
+  .background-section, .background-section2 {
+      min-height: 40vh;
+  }
+
+  .text-first{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text-before{
+    font-size: 18px;
+  }
 }
+
+
 
