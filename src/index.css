@@ -30,6 +30,23 @@ html, body {
   min-height: 70vh; 
 }
 
+.background-maps {
+  /* background-color: rgb(204, 65, 88); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;  
+  padding-top: 30%; 
+}
+
+.background-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .background-space {
   /* background-color: rgb(255, 0, 43); */
   background-size: contain;
@@ -87,6 +104,15 @@ html, body {
   .text-before{
     font-size: 30px;
   }
+
+  .background-maps {
+    /* background-color: rgb(204, 65, 88); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+    padding-top: 80%; 
+  }
 }
 
 @media (max-width: 280px) {
@@ -102,6 +128,15 @@ html, body {
   .text-before{
     font-size: 15px;
   }
+
+  .background-maps {
+    /* background-color: rgb(204, 65, 88); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+    padding-top: 80%; 
+  }
 }
 
 @media (min-width: 300px) and (max-width: 586px) {
@@ -116,6 +151,15 @@ html, body {
 
   .text-before{
     font-size: 18px;
+  }
+
+  .background-maps {
+    /* background-color: rgb(204, 65, 88); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+    padding-top: 80%; 
   }
 }
 
