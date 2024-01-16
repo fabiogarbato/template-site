@@ -1,10 +1,13 @@
 import './index.css';
 import React from 'react';
-import {Container, Carousel, Row, Col}  from 'react-bootstrap';
+import {Container, Carousel, Row, Col, Image}  from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaWhatsapp } from 'react-icons/fa';
+import Sanduba from './images/sanduba.jpg';
+import Sanduba2 from './images/sanduba2.jpg';
+import Tacos from './images/tacos.jpg';
 
 const WhatsAppButton = ({ phoneNumber }) => {
     const whatsappLink = `https://wa.me/55${phoneNumber}?text=Adorei%20seu%20artigo`;
@@ -17,44 +20,80 @@ const WhatsAppButton = ({ phoneNumber }) => {
 
 function App() {
   return (
-    <Container fluid style={{ backgroundColor: '#F5DEB3', minHeight: '100vh' }}>
+    <Container fluid style={{ backgroundColor: 'black', minHeight: '100vh' }}>
         <Navbar id = 'home' bg="blue" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'black' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'black' }}>Página 1</Nav.Link>
-                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'black' }}>Pagina 2</Nav.Link>
-                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: 'black' }}>Pagina 3</Nav.Link>
+                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>  Home  </Nav.Link>
+                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Página 1</Nav.Link>
+                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Pagina 2</Nav.Link>
+                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Pagina 3</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
         <Container fluid className="background-section">
             <Carousel>
-                <Carousel.Item>
-                    <div style={{ backgroundColor: 'red', width: '100%', height: '50vh' }}></div>
+                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                    <Image
+                        className="d-block"
+                        src={Sanduba}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '50vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Carousel.Item>
-                <Carousel.Item>
-                    <div style={{ backgroundColor: 'green', width: '100%', height: '50vh' }}></div>
+                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                    <Image
+                        className="d-block"
+                        src={Tacos}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '50vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Carousel.Item>
-                <Carousel.Item>
-                    <div style={{ backgroundColor: 'black', width: '100%', height: '50vh' }}></div>
+                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                    <Image
+                        className="d-block"
+                        src={Sanduba2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '50vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Carousel.Item>
             </Carousel>
         </Container>
         <Container id='pagina1' className='background-space'></Container>
         <Container className='background-section2'>
-            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
+            <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first'>Texto principal</span>
+                    <span className='text-first' style={{ color: '#FF4500' }}>Sobre Nós</span>
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
-                    <span className='text-before'>Lorem ipsum odio faucibus elementum fames neque class pellentesque taciti, ut magna fermentum quis leo laoreet fusce potenti, augue ultrices etiam augue sed felis bibendum suspendisse. eu aliquam augue velit eu sollicitudin odio justo, blandit duis sit purus ultricies augue venenatis, neque purus habitant quis mi himenaeos. dolor laoreet eu congue nullam erat himenaeos dictum, inceptos varius nec vulputate ante donec vitae augue, auctor cursus molestie cursus euismod facilisis. commodo scelerisque nisi sed fermentum lacinia amet quisque maecenas accumsan, imperdiet varius ullamcorper orci felis quisque sem habitasse, hac ac nec pharetra integer vestibulum quis porttitor. </span>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ backgroundColor: 'green', height: '70vh'}}>
+                    <span className='text-before' style={{ color: '#FF4500' }}>RODIZIO</span>
+                    <p className='text-description' style={{ color: '#FF4500' }}>
+                        Desfrute de uma variedade irresistível com nosso rodízio de mini hambúrgueres artesanais. Saboreie combinações clássicas e inovadoras, todas preparadas com ingredientes frescos e locais. Uma experiência única que promete agradar a todos os paladares!
+                    </p>
                 </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
-                    <span className='text-before'>Lorem ipsum odio faucibus elementum fames neque class pellentesque taciti, ut magna fermentum quis leo laoreet fusce potenti, augue ultrices etiam augue sed felis bibendum suspendisse. eu aliquam augue velit eu sollicitudin odio justo, blandit duis sit purus ultricies augue venenatis, neque purus habitant quis mi himenaeos. dolor laoreet eu congue nullam erat himenaeos dictum, inceptos varius nec vulputate ante donec vitae augue, auctor cursus molestie cursus euismod facilisis. commodo scelerisque nisi sed fermentum lacinia amet quisque maecenas accumsan, imperdiet varius ullamcorper orci felis quisque sem habitasse, hac ac nec pharetra integer vestibulum quis porttitor. </span>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ backgroundColor: 'orange', height: '70vh'}}>
+                    <span className='text-before' style={{ color: '#FF4500' }}>A LA CARTE</span>
+                    <p className='text-description' style={{ color: '#FF4500' }}>
+                        Explore nosso menu à la carte e crie sua própria aventura gastronômica. Cada mini hambúrguer é uma obra de arte culinária, feito com carnes selecionadas e uma fusão de sabores que irão transportar seu paladar a novas alturas. Perfeitos para uma refeição leve ou para compartilhar momentos especiais.
+                    </p>
                 </Col>
             </Row>
         </Container>
@@ -118,7 +157,7 @@ function App() {
         <WhatsAppButton phoneNumber="41987372059" />
         <footer className="bg-dark text-light py-3">
             <Container fluid>
-                <p className="text-center mb-0">© Seu Nome ou Marca - {new Date().getFullYear()}</p>
+                <p className="text-center mb-0">© Fábio e Vinicius - {new Date().getFullYear()}</p>
             </Container>
         </footer>
     </Container>

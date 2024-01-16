@@ -15,7 +15,7 @@ html, body {
 }
 
 .background-section {
-  background-color: pink;
+  background-color: none;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ html, body {
 }
 
 .background-section2 {
-  background-color: rgb(255, 0, 43);
+  /* background-color: rgb(255, 0, 43); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,10 +70,19 @@ html, body {
 .text-first{
   font-size: 50px;
   text-align: center;
+  font-family: 'korataki'; 
 }
 
 .text-before{
-  font-size: 25px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'korataki'; 
+}
+
+.text-description{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'korataki'; 
 }
 
 .whatsapp-float {
@@ -170,5 +179,28 @@ html, body {
   }
 }
 
+@font-face {
+  font-family: 'korataki';
+  src: local('korataki'), url(./fonts/korataki.ttf) format('truetype');
+}
+
+::selection {
+  background-color: rgb(255, 115, 0);
+  color: black; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF4500(255, 115, 0);;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dd7a56(224, 167, 121);;
+  border-radius: 5px;
+}
 
 
