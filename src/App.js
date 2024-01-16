@@ -8,6 +8,9 @@ import { FaWhatsapp } from 'react-icons/fa';
 import Sanduba from './images/sanduba.jpg';
 import Sanduba2 from './images/sanduba2.jpg';
 import Tacos from './images/tacos.jpg';
+import Hb1 from './images/hb1.jpg';
+import Hb2 from './images/hb2.jpg';
+import Hb3 from './images/hb3.jpg';
 
 const WhatsAppButton = ({ phoneNumber }) => {
     const whatsappLink = `https://wa.me/55${phoneNumber}?text=Adorei%20seu%20artigo`;
@@ -136,7 +139,7 @@ function App() {
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
                     <Image
                         className="d-block"
-                        src={Sanduba}
+                        src={Hb1}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
@@ -149,13 +152,43 @@ function App() {
             </Row>
             <Row>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
-
+                    <Image
+                        className="d-block"
+                        src={Hb2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />           
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
-                
+                    <Image
+                        className="d-block"
+                        src={Hb3}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
-                
+                    <Image
+                        className="d-block"
+                        src={Sanduba}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Col>
             </Row>
         </Container>
