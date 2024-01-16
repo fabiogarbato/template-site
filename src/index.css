@@ -9,6 +9,27 @@ html, body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;  
+}
+
+::-webkit-scrollbar-track {
+  background: #eb9258;  
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 82, 19); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 60, 0);  
+}
+
+::selection {
+  background-color: rgb(255, 115, 0);
+  color: black; 
+}
+
 .nav-link-hover:hover {
   transform: scale(1.05); 
   transition: transform 0.1s; 
@@ -68,21 +89,21 @@ html, body {
 }
 
 .text-first{
-  font-size: 50px;
+  font-size: 100px;
   text-align: center;
-  font-family: 'korataki'; 
+  font-family: 'Roboto-Regular'; 
 }
 
 .text-before{
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
-  font-family: 'korataki'; 
+  font-family: 'Roboto-Regular'; 
 }
 
 .text-description{
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  font-family: 'korataki'; 
+  font-family: 'Roboto-Regular'; 
 }
 
 .whatsapp-float {
@@ -133,7 +154,7 @@ html, body {
 
 @media (max-width: 280px) {
   .background-section, .background-section2 {
-      min-height: 40vh;
+      min-height: 10vh;
   }
 
   .text-first{
@@ -143,6 +164,12 @@ html, body {
 
   .text-before{
     font-size: 15px;
+  }
+
+  .text-description{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
   }
 
   .background-maps {
@@ -180,27 +207,9 @@ html, body {
 }
 
 @font-face {
-  font-family: 'korataki';
-  src: local('korataki'), url(./fonts/korataki.ttf) format('truetype');
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('truetype');
 }
 
-::selection {
-  background-color: rgb(255, 115, 0);
-  color: black; 
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #FF4500(255, 115, 0);;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #dd7a56(224, 167, 121);;
-  border-radius: 5px;
-}
 
 

@@ -25,13 +25,14 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Página 1</Nav.Link>
-                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Pagina 2</Nav.Link>
-                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '32px', color: '#FF4500', fontFamily: 'korataki' }}>Pagina 3</Nav.Link>
+                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>  Home  </Nav.Link>
+                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Sobre Nós</Nav.Link>
+                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Pagina 2</Nav.Link>
+                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Pagina 3</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        <Container className='background-space'></Container>
         <Container fluid className="background-section">
             <Carousel>
                 <Carousel.Item style={{ width: '100%', height: '50vh' }}>
@@ -83,16 +84,22 @@ function App() {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ backgroundColor: 'green', height: '70vh'}}>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
                     <span className='text-before' style={{ color: '#FF4500' }}>RODIZIO</span>
-                    <p className='text-description' style={{ color: '#FF4500' }}>
+                    <p className='text-description' style={{ color: 'yellow' }}>
                         Desfrute de uma variedade irresistível com nosso rodízio de mini hambúrgueres artesanais. Saboreie combinações clássicas e inovadoras, todas preparadas com ingredientes frescos e locais. Uma experiência única que promete agradar a todos os paladares!
                     </p>
+                    <p className='text-before' style={{ color: '#FF4500' }}>
+                        R$59,90
+                    </p>
                 </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ backgroundColor: 'orange', height: '70vh'}}>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
                     <span className='text-before' style={{ color: '#FF4500' }}>A LA CARTE</span>
-                    <p className='text-description' style={{ color: '#FF4500' }}>
+                    <p className='text-description' style={{ color: 'yellow' }}>
                         Explore nosso menu à la carte e crie sua própria aventura gastronômica. Cada mini hambúrguer é uma obra de arte culinária, feito com carnes selecionadas e uma fusão de sabores que irão transportar seu paladar a novas alturas. Perfeitos para uma refeição leve ou para compartilhar momentos especiais.
+                    </p>
+                    <p className='text-before' style={{ color: '#FF4500' }}>
+                        A partir de R$29,90
                     </p>
                 </Col>
             </Row>
@@ -100,24 +107,54 @@ function App() {
         <Container id='pagina2' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className="mb-1">
-                <Col xs={12} md={4} style={{ backgroundColor: 'purple', height: '40vh'}}>
-                
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
+                    <Image
+                        className="d-block"
+                        src={Sanduba2}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Col>
-                <Col xs={12} md={4} style={{ backgroundColor: 'white', height: '40vh'}}>
-                
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'white', height: '40vh'}}>
+                    <Image
+                        className="d-block"
+                        src={Sanduba}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Col>
-                <Col xs={12} md={4} style={{ backgroundColor: 'grey', height: '40vh'}}>
-                
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
+                    <Image
+                        className="d-block"
+                        src={Sanduba}
+                        alt="Primeiro slide"
+                        style={{
+                        width: '100%',        
+                        height: '40vh',       
+                        objectFit: 'cover', 
+                        objectPosition: 'center center' 
+                        }}
+                    />
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} md={4} style={{ backgroundColor: 'pink', height: '40vh'}}>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
 
                 </Col>
-                <Col xs={12} md={4} style={{ backgroundColor: 'blue', height: '40vh'}}>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
                 
                 </Col>
-                <Col xs={12} md={4} style={{ backgroundColor: 'orange', height: '40vh'}}>
+                <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
                 
                 </Col>
             </Row>
@@ -126,7 +163,7 @@ function App() {
         <Container className='background-contact'>
             <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first'>Contato</span>
+                    <span className='text-first'>Fale Conosco</span>
                 </Col>
             </Row>
             <Row>
