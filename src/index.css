@@ -128,7 +128,37 @@ html, body {
   margin-top: 16px;
 }
 
-@media (min-width: 587px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 900px){
+  .background-section, .background-section2 {
+    min-height: 40vh;
+  }
+
+  .text-first{
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .text-before{
+    font-size: 50px;
+  }
+
+  .text-description{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
+  }
+
+  .background-maps {
+    /* background-color: rgb(204, 65, 88); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+    padding-top: 80%; 
+  }
+}
+
+@media (min-width: 587px) and (max-width: 767px) {
   .background-section, .background-section2 {
       min-height: 40vh;
   }
@@ -158,16 +188,16 @@ html, body {
   }
 
   .text-first{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
   }
 
   .text-before{
-    font-size: 15px;
+    font-size:25px;
   }
 
   .text-description{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Roboto-Regular'; 
   }
@@ -182,18 +212,27 @@ html, body {
   }
 }
 
-@media (min-width: 300px) and (max-width: 586px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .background-section, .background-section2 {
       min-height: 40vh;
   }
 
   .text-first{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
+  }
+  
+  .text-before{
     font-size: 30px;
     text-align: center;
+    font-family: 'Roboto-Regular'; 
   }
-
-  .text-before{
-    font-size: 18px;
+  
+  .text-description{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
   }
 
   .background-maps {
@@ -206,10 +245,50 @@ html, body {
   }
 }
 
+@media (min-width: 401px) and (max-width: 586px){
+  .background-section, .background-section2 {
+    min-height: 40vh;
+  }
+
+  .text-first{
+    font-size:55px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
+  }
+
+  .text-before{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
+  }
+
+  .text-description{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Roboto-Regular'; 
+  }
+
+  .background-maps {
+    /* background-color: rgb(204, 65, 88); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+    padding-top: 80%; 
+  }
+
+}
+
 @font-face {
   font-family: 'Roboto-Regular';
   src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Super-Spicy-Personal-Use';
+  src: local('Super-Spicy-Personal-Use'), url(./fonts/Super-Spicy-Personal-Use.ttf) format('truetype');
+}
+
 
 
 

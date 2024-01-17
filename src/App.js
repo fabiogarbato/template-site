@@ -28,50 +28,50 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Sobre Nós</Nav.Link>
-                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Pagina 2</Nav.Link>
-                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '50px', color: '#FF4500', fontFamily: 'Roboto-Regular' }}>Pagina 3</Nav.Link>
+                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>  Home  </Nav.Link>
+                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Sobre Nós</Nav.Link>
+                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
+                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
         <Container className='background-space'></Container>
         <Container fluid className="background-section">
             <Carousel>
-                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
                     <Image
                         className="d-block"
                         src={Sanduba}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '50vh',       
+                        height: '70vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
                     />
                 </Carousel.Item>
-                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
                     <Image
                         className="d-block"
                         src={Tacos}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '50vh',       
+                        height: '70vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
                     />
                 </Carousel.Item>
-                <Carousel.Item style={{ width: '100%', height: '50vh' }}>
+                <Carousel.Item style={{ width: '100%', height: '70vh' }}>
                     <Image
                         className="d-block"
                         src={Sanduba2}
                         alt="Primeiro slide"
                         style={{
                         width: '100%',        
-                        height: '50vh',       
+                        height: '70vh',       
                         objectFit: 'cover', 
                         objectPosition: 'center center' 
                         }}
