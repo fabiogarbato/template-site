@@ -11,6 +11,8 @@ import Tacos from './images/tacos.jpg';
 import Hb1 from './images/hb1.jpg';
 import Hb2 from './images/hb2.jpg';
 import Hb3 from './images/hb3.jpg';
+import Face from './images/face.png';
+import Insta from './images/insta.png';
 
 const WhatsAppButton = ({ phoneNumber }) => {
     const whatsappLink = `https://wa.me/55${phoneNumber}?text=Adorei%20seu%20artigo`;
@@ -194,17 +196,43 @@ function App() {
         </Container>
         <Container id='pagina3' className='background-space'></Container>
         <Container className='background-contact'>
-            <Row className='h-100 d-flex justify-content-center align-items-center' style={{ backgroundColor: 'pink'}}>
+            <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first'>Fale Conosco</span>
+                    <span className='text-first' style={{ color: '#FF4500' }}>Redes Sociais</span>
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'green', height: '70vh'}}>
-                    <span className='text-before'>bla</span>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
+                    <Image
+                        className="d-block"
+                        src={Face}
+                        alt="Primeiro slide"
+                        style={{
+                            maxWidth: '100%',     
+                            maxHeight: '70vh',     
+                            objectFit: 'contain', 
+                            objectPosition: 'center center'
+                        }}
+                    />
+                    <p className='text-before' style={{ color: '#FF4500' }}>
+                        burguerMais
+                    </p>
                 </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center' style={{ backgroundColor: 'orange', height: '70vh'}}>
-                    <span className='text-before'>bla</span>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
+                    <Image
+                        className="d-block"
+                        src={Insta}
+                        alt="Primeiro slide"
+                        style={{
+                            maxWidth: '100%',     
+                            maxHeight: '70vh',     
+                            objectFit: 'contain', 
+                            objectPosition: 'center center'
+                        }}
+                    />
+                    <p className='text-before' style={{ color: '#FF4500' }}>
+                        @burguerMais
+                    </p>
                 </Col>
             </Row>
         </Container>
