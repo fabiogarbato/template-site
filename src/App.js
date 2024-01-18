@@ -110,7 +110,7 @@ function App() {
             </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>CARDÁPIO</Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Cardápio</Container>
         <Container className='background-section2'>
             <Row className="mb-1">
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
@@ -242,7 +242,7 @@ function App() {
             </Row>
         </Container>
         <Container id='localizacao' className='background-space'></Container>
-        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>FAÇA-NOS UMA VISITA!</Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Faça-nos uma visita!</Container>
         <Container className='background-maps'>
             <iframe
                 title="Google Maps"
@@ -261,7 +261,7 @@ function App() {
         <WhatsAppButton phoneNumber="41987372059" />
         <footer className="bg-dark text-light py-3">
             <Container fluid>
-                <p className="text-center mb-0">© Fábio e Vinicius - {new Date().getFullYear()}</p>
+                <p className="text-center mb-0">© GB - Tecnologia - {new Date().getFullYear()}</p>
             </Container>
         </footer>
     </Container>
