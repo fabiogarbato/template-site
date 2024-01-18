@@ -25,7 +25,7 @@ const WhatsAppButton = ({ phoneNumber }) => {
 
 function App() {
   return (
-    <Container fluid style={{ backgroundColor: 'black', minHeight: '100vh' }}>
+    <Container fluid style={{ backgroundColor: '#121b21', minHeight: '100vh' }}>
         <Navbar id = 'home' bg="blue" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
