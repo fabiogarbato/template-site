@@ -203,33 +203,37 @@ function App() {
             </Row>
             <Row>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'green',*/ height: '40vh'}}>
-                    <Image
-                        className="d-block"
-                        src={Face}
-                        alt="Primeiro slide"
-                        style={{
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="d-block zoom-hover"
+                            src={Face}
+                            alt="Primeiro slide"
+                            style={{
                             maxWidth: '100%',     
                             maxHeight: '70vh',     
                             objectFit: 'contain', 
                             objectPosition: 'center center'
-                        }}
-                    />
+                            }}
+                        />
+                    </a>
                     <p className='text-before' style={{ color: '#FF4500' }}>
                         burguerMais
                     </p>
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
-                    <Image
-                        className="d-block"
-                        src={Insta}
-                        alt="Primeiro slide"
-                        style={{
-                            maxWidth: '100%',     
-                            maxHeight: '70vh',     
-                            objectFit: 'contain', 
-                            objectPosition: 'center center'
-                        }}
-                    />
+                    <a href="https://www.instagram.com/garbato.fabio/" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            className="d-block zoom-hover"
+                            src={Insta}
+                            alt="Primeiro slide"
+                            style={{
+                                maxWidth: '100%',     
+                                maxHeight: '70vh',     
+                                objectFit: 'contain', 
+                                objectPosition: 'center center'
+                            }}
+                        />
+                    </a>
                     <p className='text-before' style={{ color: '#FF4500' }}>
                         @burguerMais
                     </p>

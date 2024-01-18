@@ -132,6 +132,11 @@ html, body {
   margin-top: 16px;
 }
 
+.zoom-hover:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem para 110% do original */
+  transition: transform 0.5s ease; /* Faz a transição suavemente em 0.5 segundos */
+}
+
 @media (min-width: 768px) and (max-width: 900px){
   .background-section, .background-section2 {
     min-height: 40vh;
