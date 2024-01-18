@@ -110,6 +110,7 @@ function App() {
             </Row>
         </Container>
         <Container id='cardapio' className='background-space'></Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>CARDÁPIO</Container>
         <Container className='background-section2'>
             <Row className="mb-1">
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
@@ -217,7 +218,7 @@ function App() {
                         />
                     </a>
                     <p className='text-before' style={{ color: '#f5ddba' }}>
-                        burguerMais
+                        BurguerMais
                     </p>
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ /*backgroundColor: 'orange',*/ height: '40vh'}}>
@@ -241,6 +242,7 @@ function App() {
             </Row>
         </Container>
         <Container id='localizacao' className='background-space'></Container>
+        <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>FAÇA-NOS UMA VISITA!</Container>
         <Container className='background-maps'>
             <iframe
                 title="Google Maps"
