@@ -26,14 +26,14 @@ const WhatsAppButton = ({ phoneNumber }) => {
 function App() {
   return (
     <Container fluid style={{ backgroundColor: '#121b21', minHeight: '100vh' }}>
-        <Navbar id = 'home' bg="blue" expand="lg">
+        <Navbar bg="blue" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Sobre Nós</Nav.Link>
-                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
-                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
+                    <Nav.Link href="#sobre" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>  Sobre Nós  </Nav.Link>
+                    <Nav.Link href="#cardapio" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Cardapio</Nav.Link>
+                    <Nav.Link href="#contato" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
+                    <Nav.Link href="#localizacao" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -81,7 +81,7 @@ function App() {
                 </Carousel.Item>
             </Carousel>
         </Container>
-        <Container id='pagina1' className='background-space'></Container>
+        <Container id='sobre' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col className='d-flex justify-content-center align-items-center'>
@@ -109,7 +109,7 @@ function App() {
                 </Col>
             </Row>
         </Container>
-        <Container id='pagina2' className='background-space'></Container>
+        <Container id='cardapio' className='background-space'></Container>
         <Container className='background-section2'>
             <Row className="mb-1">
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
@@ -194,7 +194,7 @@ function App() {
                 </Col>
             </Row>
         </Container>
-        <Container id='pagina3' className='background-space'></Container>
+        <Container id='contato' className='background-space'></Container>
         <Container className='background-contact'>
             <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
                 <Col className='d-flex justify-content-center align-items-center'>
@@ -240,7 +240,7 @@ function App() {
                 </Col>
             </Row>
         </Container>
-        <Container className='background-space'></Container>
+        <Container id='localizacao' className='background-space'></Container>
         <Container className='background-maps'>
             <iframe
                 title="Google Maps"
