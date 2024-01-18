@@ -14,15 +14,15 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #eb9258;  
+  background: #f5c4a4;  
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(216, 82, 19); 
+  background: #fda451;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 60, 0);  
+  background: #ffae00;  
 }
 
 ::selection {

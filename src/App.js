@@ -30,10 +30,10 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>  Home  </Nav.Link>
-                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Sobre Nós</Nav.Link>
-                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
-                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#FF4500', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
+                    <Nav.Link href="#home" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>  Home  </Nav.Link>
+                    <Nav.Link href="#pagina1" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Sobre Nós</Nav.Link>
+                    <Nav.Link href="#pagina2" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
+                    <Nav.Link href="#pagina3" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -85,7 +85,7 @@ function App() {
         <Container className='background-section2'>
             <Row className='h-100 d-flex justify-content-center align-items-center'>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first' style={{ color: '#FF4500' }}>Sobre Nós</span>
+                    <span className='text-first' style={{ color: '#f5ddba' }}>Sobre Nós</span>
                 </Col>
             </Row>
             <Row>
@@ -198,7 +198,7 @@ function App() {
         <Container className='background-contact'>
             <Row className='h-100 d-flex justify-content-center align-items-center' /*style={{ backgroundColor: 'pink'}}*/>
                 <Col className='d-flex justify-content-center align-items-center'>
-                    <span className='text-first' style={{ color: '#FF4500' }}>Redes Sociais</span>
+                    <span className='text-first' style={{ color: '#f5ddba' }}>Redes Sociais</span>
                 </Col>
             </Row>
             <Row>
@@ -216,7 +216,7 @@ function App() {
                             }}
                         />
                     </a>
-                    <p className='text-before' style={{ color: '#FF4500' }}>
+                    <p className='text-before' style={{ color: '#f5ddba' }}>
                         burguerMais
                     </p>
                 </Col>
@@ -234,7 +234,7 @@ function App() {
                             }}
                         />
                     </a>
-                    <p className='text-before' style={{ color: '#FF4500' }}>
+                    <p className='text-before' style={{ color: '#f5ddba' }}>
                         @burguerMais
                     </p>
                 </Col>
