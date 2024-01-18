@@ -90,20 +90,20 @@ function App() {
             </Row>
             <Row>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
-                    <span className='text-before' style={{ color: '#FF4500' }}>RODIZIO</span>
+                    <span className='text-before' style={{ color: '#f5ddba' }}>RODIZIO</span>
                     <p className='text-description' style={{ color: '#5e3f12' }}>
                         Desfrute de uma variedade irresistível com nosso rodízio de mini hambúrgueres artesanais. Saboreie combinações clássicas e inovadoras, todas preparadas com ingredientes frescos e locais. Uma experiência única que promete agradar a todos os paladares!
                     </p>
-                    <p className='text-before' style={{ color: '#FF4500' }}>
+                    <p className='text-before' style={{ color: '#f5ddba' }}>
                         R$59,90
                     </p>
                 </Col>
                 <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
-                    <span className='text-before' style={{ color: '#FF4500' }}>A LA CARTE</span>
+                    <span className='text-before' style={{ color: '#f5ddba' }}>A LA CARTE</span>
                     <p className='text-description' style={{ color: '#5e3f12' }}>
                         Explore nosso menu à la carte e crie sua própria aventura gastronômica. Cada mini hambúrguer é uma obra de arte culinária, feito com carnes selecionadas e uma fusão de sabores que irão transportar seu paladar a novas alturas. Perfeitos para uma refeição leve ou para compartilhar momentos especiais.
                     </p>
-                    <p className='text-before' style={{ color: '#FF4500' }}>
+                    <p className='text-before' style={{ color: '#f5ddba' }}>
                         A partir de R$29,90
                     </p>
                 </Col>
