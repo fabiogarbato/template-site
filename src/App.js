@@ -120,10 +120,10 @@ function App() {
         <Container id='cardapio' className='background-space'></Container>
         <Container id='cardapio' className='text-first background-cardapio' style={{ color: '#f5ddba' }}>Cardápio</Container>
         <Container className='background-section2'>
-            <Row className="mb-1">
+            <Row className="mb-3">
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'purple', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Sanduba2}
                         alt="Primeiro slide"
                         style={{
@@ -136,7 +136,7 @@ function App() {
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'white', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Sanduba}
                         alt="Primeiro slide"
                         style={{
@@ -149,7 +149,7 @@ function App() {
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'grey', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Hb1}
                         alt="Primeiro slide"
                         style={{
@@ -164,7 +164,7 @@ function App() {
             <Row>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'pink', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Hb2}
                         alt="Primeiro slide"
                         style={{
@@ -177,7 +177,7 @@ function App() {
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'blue', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Hb3}
                         alt="Primeiro slide"
                         style={{
@@ -190,7 +190,7 @@ function App() {
                 </Col>
                 <Col xs={12} md={4} style={{ padding: 0, backgroundColor: 'orange', height: '40vh'}}>
                     <Image
-                        className="d-block"
+                        className="d-block move"
                         src={Sanduba}
                         alt="Primeiro slide"
                         style={{
