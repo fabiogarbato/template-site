@@ -102,7 +102,7 @@ function App() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ minHeight: '60vh', padding: '4rem 0'}}>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ minHeight: '60vh', padding: '4rem 0', paddingRight: '4rem 0'}}>
                     <div className='d-flex align-items-start'>
                         <span className='text-before' style={{ color: '#f5ddba' }}>A LA CARTE</span>
                     </div>
