@@ -30,16 +30,16 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#sobre" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>  Sobre Nós  </Nav.Link>
-                    <Nav.Link href="#cardapio" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Cardapio</Nav.Link>
-                    <Nav.Link href="#contato" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Contato</Nav.Link>
-                    <Nav.Link href="#localizacao" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Super-Spicy-Personal-Use' }}>Localização</Nav.Link>
+                    <Nav.Link href="#sobre" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic'}}>  Sobre Nós  </Nav.Link>
+                    <Nav.Link href="#cardapio" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Cardapio</Nav.Link>
+                    <Nav.Link href="#contato" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Contato</Nav.Link>
+                    <Nav.Link href="#localizacao" className="nav-link-hover" style={{ margin: '0 20px', fontSize: '40px', color: '#f5ddba', fontFamily: 'Fira Sans Condensed , sans-serif', fontWeight: 900, fontStyle: 'italic' }}>Localização</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
         <Container className='background-space'></Container>
         <Container fluid className="background-section">
-            <Carousel>
+            <Carousel indicators={false} controls={false}>
                 <Carousel.Item style={{ width: '100%', height: '70vh' }}>
                     <Image
                         className="d-block"
@@ -89,23 +89,31 @@ function App() {
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
-                    <span className='text-before' style={{ color: '#f5ddba' }}>RODIZIO</span>
-                    <p className='text-description' style={{ color: '#5e3f12' }}>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ minHeight: '60vh', padding: '4rem 0', paddingLeft: '4rem 0'}}>
+                    <div className='d-flex align-items-start'>
+                        <span className='text-before' style={{ color: '#f5ddba' }}>RODIZIO</span>
+                    </div>
+                    <p className='text-description flex-grow-1' style={{ color: '#5e3f12' }}>
                         Desfrute de uma variedade irresistível com nosso rodízio de mini hambúrgueres artesanais. Saboreie combinações clássicas e inovadoras, todas preparadas com ingredientes frescos e locais. Uma experiência única que promete agradar a todos os paladares!
                     </p>
-                    <p className='text-before' style={{ color: '#f5ddba' }}>
-                        R$59,90
-                    </p>
+                    <div className='d-flex align-items-end'>
+                        <p className='text-before' style={{ color: '#f5ddba' }}>
+                            R$59,90
+                        </p>
+                    </div>
                 </Col>
-                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ height: '70vh'}}>
-                    <span className='text-before' style={{ color: '#f5ddba' }}>A LA CARTE</span>
-                    <p className='text-description' style={{ color: '#5e3f12' }}>
+                <Col xs={12} lg={6} className='d-flex justify-content-center align-items-center flex-column' style={{ minHeight: '60vh', padding: '4rem 0'}}>
+                    <div className='d-flex align-items-start'>
+                        <span className='text-before' style={{ color: '#f5ddba' }}>A LA CARTE</span>
+                    </div>
+                    <p className='text-description flex-grow-1' style={{ color: '#5e3f12' }}>
                         Explore nosso menu à la carte e crie sua própria aventura gastronômica. Cada mini hambúrguer é uma obra de arte culinária, feito com carnes selecionadas e uma fusão de sabores que irão transportar seu paladar a novas alturas. Perfeitos para uma refeição leve ou para compartilhar momentos especiais.
                     </p>
+                    <div className='d-flex align-items-end'>
                     <p className='text-before' style={{ color: '#f5ddba' }}>
                         A partir de R$29,90
                     </p>
+                    </div>
                 </Col>
             </Row>
         </Container>

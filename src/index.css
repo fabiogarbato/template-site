@@ -40,7 +40,7 @@ html, body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
 .background-section2 {
@@ -48,7 +48,7 @@ html, body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 70vh; 
+  min-height: 50vh; 
 }
 
 .background-maps {
@@ -100,13 +100,16 @@ html, body {
 .text-first{
   font-size: 70px;
   text-align: center;
-  font-family: 'Roboto-Regular'; 
+  font-family: 'Fira Sans Condensed , sans-serif'; 
+  font-weight: 900;
 }
 
 .text-before{
   font-size: 40px;
   text-align: center;
-  font-family: 'Roboto-Regular'; 
+  font-family: 'Roboto-Regular';
+  font-family: 'Fira Sans Condensed , sans-serif'; 
+  font-weight: 600; 
 }
 
 .text-description{
@@ -115,8 +118,9 @@ html, body {
   font-family: 'Roboto-Regular'; 
   background-color: #face8c;
   border-radius: 10px; 
-  display: inline-block; 
   margin: 0 auto;
+  font-family: 'Fira Sans Condensed , sans-serif'; 
+  font-weight: 200; 
 }
 
 .whatsapp-float {
@@ -154,16 +158,21 @@ html, body {
   .text-first{
     font-size: 70px;
     text-align: center;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 900;
   }
 
   .text-before{
     font-size: 50px;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 600; 
   }
 
   .text-description{
     font-size: 35px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 200;
   }
 
   .background-maps {
@@ -184,10 +193,14 @@ html, body {
   .text-first{
     font-size: 50px;
     text-align: center;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 900;
   }
 
   .text-before{
     font-size: 30px;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 600; 
   }
 
   .background-maps {
@@ -208,16 +221,22 @@ html, body {
   .text-first{
     font-size: 35px;
     text-align: center;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 900;
   }
 
   .text-before{
     font-size:25px;
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 600; 
   }
 
   .text-description{
     font-size: 20px;
     text-align: center;
     font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 200;
   }
 
   .background-maps {
@@ -238,19 +257,23 @@ html, body {
   .text-first{
     font-size: 45px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 900;
   }
   
   .text-before{
     font-size: 30px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 600; 
   }
   
   .text-description{
     font-size: 24px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Roboto-Regular';
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 200; 
   }
 
   .background-maps {
@@ -271,19 +294,23 @@ html, body {
   .text-first{
     font-size:55px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 900;
   }
 
   .text-before{
     font-size: 40px;
     text-align: center;
-    font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 600; 
   }
 
   .text-description{
     font-size: 28px;
     text-align: center;
     font-family: 'Roboto-Regular'; 
+    font-family: 'Fira Sans Condensed , sans-serif'; 
+    font-weight: 200;
   }
 
   .background-maps {
@@ -306,6 +333,13 @@ html, body {
   font-family: 'Super-Spicy-Personal-Use';
   src: local('Super-Spicy-Personal-Use'), url(./fonts/Super-Spicy-Personal-Use.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: local('Fira Sans Condensed'), url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;1,900&display=swap') format('truetype');
+}
+
+
 
 
 
