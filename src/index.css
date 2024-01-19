@@ -35,6 +35,17 @@ html, body {
   transition: transform 0.1s; 
 }
 
+
+.navbar-toggler-icon {
+  background-image: none; 
+  display: inline-block; 
+  width: 1.5em; 
+  height: 1.5em; 
+  vertical-align: middle;
+  content: ""; 
+  background-color: #face8c; 
+}
+
 .background-section {
   background-color: none;
   background-size: contain;
@@ -137,13 +148,22 @@ html, body {
   align-items: center;
 }
 
+.move {
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scale(1); 
+}
+.move:hover {
+  filter: brightness(80%);
+  transform: scale(1.02); 
+}
+
 .fa-whatsapp {
   margin-top: 16px;
 }
 
 .zoom-hover:hover {
-  transform: scale(1.1); /* Aumenta o tamanho da imagem para 110% do original */
-  transition: transform 0.5s ease; /* Faz a transição suavemente em 0.5 segundos */
+  transform: scale(1.1); 
+  transition: transform 0.5s ease; 
 }
 
 @media (min-width: 768px) and (max-width: 900px){
